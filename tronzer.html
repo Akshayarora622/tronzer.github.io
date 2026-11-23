@@ -1,10 +1,196 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My First Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Professional Website</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7ff;
+    color: #172033;
+}
+
+header {
+    background: #111827;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #60a5fa;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.hero {
+    min-height: 500px;
+    padding: 100px 8%;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #172554, #2563eb);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 600px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 28px;
+    background: #60a5fa;
+    color: #111827;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+section {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 35px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px #00000010;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: #2563eb;
+}
+
+.contact {
+    background: #e8efff;
+}
+
+footer {
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+@media(max-width:600px) {
+    header {
+        gap: 15px;
+    }
+    nav a {
+        margin: 0 10px 0 0;
+    }
+    .hero h1 {
+        font-size: 34px;
+    }
+}
+</style>
 </head>
+
 <body>
-    <h1>Welcome to My Website!</h1>
-    <p>My website is working!</p>
+
+<header>
+    <div class="logo">MyWebsite</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero" id="home">
+    <div>
+        <h1>Welcome to My Website</h1>
+        <p>
+            We create modern digital experiences.
+            Explore our services and discover
+            something amazing.
+        </p>
+        <a href="#services" class="btn">Explore Now</a>
+    </div>
+</div>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>
+        Welcome to our website. We provide
+        quality services and creative solutions
+        for our customers.
+    </p>
+</section>
+
+<section id="services">
+    <h2>Our Services</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Web Design</h3>
+            <p>Beautiful and modern website designs.</p>
+        </div>
+
+        <div class="card">
+            <h3>Development</h3>
+            <p>Fast and responsive website development.</p>
+        </div>
+
+        <div class="card">
+            <h3>Support</h3>
+            <p>Friendly support for your business.</p>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: hello@example.com</p>
+    <a href="mailto:hello@example.com" class="btn">
+        Send Email
+    </a>
+</section>
+
+<footer>
+    <p>© 2026 MyWebsite. All Rights Reserved.</p>
+</footer>
+
 </body>
 </html>
